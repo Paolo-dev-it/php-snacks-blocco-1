@@ -23,14 +23,25 @@ $array = [
 
 
 
+// for($i=0; $i<count($array); $i++){
+
+//     echo $array[$i]['name']. ' - ' . $array[$i]['lastname'];
+
+//     for($n=0; $n<count($array[$n]['vote']); $n++){
+//         echo $array[$n]['vote'];
+//     }
+
+// }
+
 for($i=0; $i<count($array); $i++){
 
-    echo $array[$i]['name']. ' - ' . $array[$i]['lastname'];
+    echo $array[$i]['name']. '  ' . $array[$i]['lastname'];
 
-    for($n=0; $n<count(['vote']); $n++){
-        echo $array[$n]['vote'];
+    for($n=0; $n<count($array[$i]['vote']); $n++){
+
+        echo  '<br/>'.$array[$n]['vote'] ;
+
     }
-
 }
     
 
