@@ -73,21 +73,29 @@ $posts = [
   
 // }
 
+// CICLO FOR EACH
+
+// //foreach($array as $key => $value){
+
+// }
+
 foreach ($posts as $date => $value) {
     echo('->');
     echo $date;
     echo(' - ');
 
-    foreach ($value as $text) {
+    foreach ($value as $post) {
 
-        echo $text['title']. ' '. '<br>';
+        echo $post['title']. ' '. '<br>';
         
-        echo $text['author']. ' '. '<br>';
+        echo $post['author']. ' '. '<br>';
         
-        echo $text['text']. ' '. '<br>';
+        echo $post['text']. ' '. '<br>';
         
     }
 }
+
+
 
 
 ?>
