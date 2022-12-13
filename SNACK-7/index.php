@@ -33,15 +33,21 @@ $array = [
 
 // }
 
-for($i=0; $i<count($array); $i++){
+// for($i=0; $i<count($array); $i++){
 
-    echo $array[$i]['name']. '  ' . $array[$i]['lastname'];
+//     echo $array[$i]['name']. '  ' . $array[$i]['lastname'];
 
-    for($n=0; $n<count($array[$i]['vote']); $n++){
+//     for($n=0; $n<count($array[$i]['vote']); $n++){
 
-        echo  '<br/>'.$array[$n]['vote'] ;
+//         echo  '<br/>'.$array[$n]['vote'] ;
 
-    }
+//     }
+// }
+
+foreach($array as $value){
+    echo $value['name']. ' ';
+    echo $value['lastname']. ' ';
+    echo array_sum($value['vote']) / count($value['vote']) . '<br/>' ;
 }
     
 
