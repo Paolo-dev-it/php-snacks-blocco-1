@@ -10,4 +10,12 @@ Prendere un paragrafo abbastanza lungo, contenente diverse frasi. Prendere il pa
     echo "<pre>";
         print_r(explode(".", $paragrafo));
     echo "</pre>";
+
+    // Soluzione più corretta
+
+    // for($i=0; $i<count($paragrafo); $i++){
+           //echo "<p>";
+    //     echo $paragrafo[$i];
+           //echo "</p>";
+    // }    
 ?>

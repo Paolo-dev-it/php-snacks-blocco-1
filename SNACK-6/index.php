@@ -39,6 +39,22 @@ Utilizzare questo array: https://pastebin.com/CkX3680A. Stampiamo il nostro arra
          
 //     }
 // }
+
+//$arrayChiavi = array_keys($db);
+
+// for($i=0; $i < count($arrayChiavi); $i++){
+//     if( $arrayChiavi[$i]== 'teachers' ){
+//         for($k=0; $k<count($db['teachers']); $k++){
+//             echo $db['teachers'][$k]['name']. ' - '. $db['teachers'][$k]['name'];
+//         }
+//     } else{
+//          for($k=0; $k<count($db['pm']); $k++){
+//             echo $db['pm'][$k]['name']. ' - '. $db['pm'][$k]['name'];
+//         }
+//     }
+// }
+
+
  
 ?>
 

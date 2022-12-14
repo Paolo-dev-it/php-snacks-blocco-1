@@ -44,7 +44,16 @@ $array = [
 //     }
 // }
 
+// for($i=0; $i<count($array); $i++){
+//     $mediaVoti = array_sum($array[$i]['vote']) / count($array[$i]['vote']);
+//     echo $array[$i]['name']. ' - '. $array[$i]['lastname']. 'la media dei voti è:' . $mediaVoti;
+// }
+
+
 foreach($array as $value){
+    // echo "<pre>";
+    // var_dump($value);
+    // echo "</pre>";
     echo $value['name']. ' ';
     echo $value['lastname']. ' ';
     echo array_sum($value['vote']) / count($value['vote']) . '<br/>' ;
